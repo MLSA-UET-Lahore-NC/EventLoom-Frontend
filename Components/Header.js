@@ -1,37 +1,28 @@
 import React from 'react'
 import Link from 'next/link'
+import { SiEventbrite } from "react-icons/si";
+
 
 const Header = () => {
   return (
     <div>
-   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">Eventloom</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon" />
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/event">Events</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/ticket">Ticket</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/registration">Registration</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/management">Management</Link>
-        </li>
-     
-      </ul>
-    </div>
-  </div>
-</nav>
+      <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start" style={{ height: "4rem", backgroundColor: "#212529" }} >
+        <div className="hidden sm:ml-6 sm:block">
+          <a href='/'>
+            <SiEventbrite className="mr-5" color='#020617' style={{fontSize: "30px", position: "relative", top: "1rem", left: "3rem", cursor: "pointer"}} /> 
+          </a>
+
+           
+
+          <div className="flex space-x-4 text-center justify-center items-center p-3" style={{marginTop: "-2rem"}}>
+            <a href="/" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page" style={{ textDecoration: "none", color: "white", fontSize: "larger" }}>Home</a>
+            <a href="/event" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white" style={{ textDecoration: "none", color: "white", fontSize: "larger" }}>Event</a>
+            <a href="/ticket" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white" style={{ textDecoration: "none", color: "white", fontSize: "larger" }}>Ticket</a>
+            <a href="/registration" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white " style={{ textDecoration: "none", color: "white", fontSize: "larger" }}>Registration</a>
+            <a href="/management" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white" style={{ textDecoration: "none", color: "white", fontSize: "larger" }}>Management</a>
+          </div>
+        </div>
+      </div>
 
     </div>
   )
