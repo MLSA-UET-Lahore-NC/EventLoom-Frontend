@@ -2,6 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { SiEventbrite } from "react-icons/si";
 import LocalTime from "./LocalTime";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaFlickr } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
 
 const Header = () => {
   return (
@@ -19,7 +25,7 @@ const Header = () => {
                 fontSize: "30px",
                 position: "relative",
                 top: "1rem",
-                left: "3rem",
+                left: "-29rem",
                 cursor: "pointer",
               }}
             />
@@ -29,7 +35,7 @@ const Header = () => {
             className="flex space-x-4 text-center justify-center items-center p-3"
             style={{ marginTop: "-2rem" }}
           >
-            <LocalTime />
+            <LocalTime/>
             <a
               href="/event"
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white"
@@ -40,7 +46,31 @@ const Header = () => {
               }}
             >
               Event
+
+
+
             </a>
+            
+              <a href="https://www.facebook.com/a2zevents" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF style={{position: "absolute", top: "22px", left: "90rem", color: "white", fontSize: "x-large"}}/>
+              </a>
+
+              <a href="https://www.instagram.com/a2zevents/" target="_blank" rel="noopener noreferrer">
+            < FaInstagram style={{position: "absolute", top: "22px", left: "92rem", color: "white", fontSize: "x-large"}}/>
+              </a>
+
+              <a href="https://www.pinterest.com/a2zevent/" target="_blank" rel="noopener noreferrer">
+            < FaPinterestP style={{position: "absolute", top: "22px", left: "94rem", color: "white", fontSize: "x-large"}}/>
+              </a>
+
+              <a href="https://www.flickr.com/photos/a2zeventssolutions" target="_blank" rel="noopener noreferrer">
+            < FaFlickr style={{position: "absolute", top: "22px", left: "96rem", color: "white", fontSize: "x-large"}}/>
+              </a>
+
+              <a href="https://www.youtube.com/user/a2zeventssolutions" target="_blank" rel="noopener noreferrer">
+            < FaYoutube style={{position: "absolute", top: "22px", left: "98rem", color: "white", fontSize: "x-large"}}/>
+              </a>
+
             <a
               href="/ticket"
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white"
@@ -74,6 +104,7 @@ const Header = () => {
             >
               Management
             </a>
+
           </div>
         </div>
       </div>
