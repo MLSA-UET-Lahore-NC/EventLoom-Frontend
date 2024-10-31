@@ -19,7 +19,7 @@ const Header = () => {
                 fontSize: "30px",
                 position: "relative",
                 top: "1rem",
-                left: "3rem",
+                left: "-29rem",
                 cursor: "pointer",
               }}
             />
@@ -29,7 +29,7 @@ const Header = () => {
             className="flex space-x-4 text-center justify-center items-center p-3"
             style={{ marginTop: "-2rem" }}
           >
-            <LocalTime />
+            <LocalTime/>
             <a
               href="/event"
               className="rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white"
